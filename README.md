@@ -2,7 +2,7 @@
 
 Docker container for compiling linux python wheels for [sme](https://pypi.org/project/sme/)
 
-- Available from <https://hub.docker.com/r/lkeegan/sme_manylinux2010-pypy_x86_64>
+- Available from <https://hub.docker.com/r/spatialmodeleditor/manylinux2010-pypy_x86_64>
 
 - Used by <https://github.com/spatial-model-editor/spatial-model-editor>
 
@@ -11,8 +11,8 @@ Docker container for compiling linux python wheels for [sme](https://pypi.org/pr
 To update:
 
 ```bash
-docker build . -t lkeegan/sme_manylinux2010-pypy_x86_64:tagname
-docker push lkeegan/sme_manylinux2010-pypy_x86_64:tagname
+docker build . -t spatialmodeleditor/manylinux2010-pypy_x86_64:tagname
+docker push spatialmodeleditor/manylinux2010-pypy_x86_64:tagname
 ```
 
 where `tagname` is today's date in the form `YYYY.MM.DD`
