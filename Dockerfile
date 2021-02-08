@@ -14,5 +14,5 @@ RUN /opt/python/cp38-cp38/bin/pip install \
 ENV SME_DUNE_COPASI_USE_FALLBACK_FILESYSTEM="on"
 
 # SME static libs
-COPY --from=spatialmodeleditor/manylinux2010_x86_64:2021.02.07 $BUILD_DIR $BUILD_DIR
+COPY --from=spatialmodeleditor/manylinux2010_x86_64:2021.02.08 $BUILD_DIR $BUILD_DIR
 ENV CMAKE_PREFIX_PATH="$BUILD_DIR;$BUILD_DIR/lib64/cmake"
