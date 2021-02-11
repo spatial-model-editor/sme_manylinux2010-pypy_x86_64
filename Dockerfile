@@ -10,9 +10,6 @@ RUN /opt/python/cp38-cp38/bin/pip install \
         cmake \
     && ln -fs /opt/python/cp38-cp38/bin/cmake /usr/bin/cmake
 
-# use dune-copasi fallback filesystem
-ENV SME_DUNE_COPASI_USE_FALLBACK_FILESYSTEM="on"
-
 # SME static libs
-COPY --from=spatialmodeleditor/manylinux2010_x86_64:2021.02.08 $BUILD_DIR $BUILD_DIR
+COPY --from=spatialmodeleditor/manylinux2010_x86_64:2021.02.11 $BUILD_DIR $BUILD_DIR
 ENV CMAKE_PREFIX_PATH="$BUILD_DIR;$BUILD_DIR/lib64/cmake"
