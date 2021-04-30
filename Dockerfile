@@ -11,5 +11,5 @@ RUN /opt/python/cp38-cp38/bin/pip install \
     && ln -fs /opt/python/cp38-cp38/bin/cmake /usr/bin/cmake
 
 # SME static libs
-COPY --from=spatialmodeleditor/manylinux2010_x86_64:2021.04.15 $BUILD_DIR $BUILD_DIR
+COPY --from=spatialmodeleditor/manylinux2010_x86_64:2021.04.30 $BUILD_DIR $BUILD_DIR
 ENV CMAKE_PREFIX_PATH="$BUILD_DIR;$BUILD_DIR/lib64/cmake"
